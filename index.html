@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbm - Creative Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="paper-bg min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 border-b border-gray-200">
+        <div class="container mx-auto px-8 lg:px-16 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="sketch-font text-2xl text-gray-800 font-bold">bbm</a>
+                <div class="flex gap-6 overflow-x-auto">
+                    <a href="#home" class="hover:text-blue-600 transition-colors sketch-font text-lg whitespace-nowrap">Home</a>
+                    <a href="#education" class="hover:text-blue-600 transition-colors sketch-font text-lg whitespace-nowrap">Projects</a>
+                    <a href="#projects" class="hover:text-blue-600 transition-colors sketch-font text-lg whitespace-nowrap">Education</a>
+                    <a href="#certificates" class="hover:text-blue-600 transition-colors sketch-font text-lg whitespace-nowrap">Certificates</a>
+                    <a href="#upcoming" class="hover:text-blue-600 transition-colors sketch-font text-lg whitespace-nowrap">Upcoming</a>
+                    <a href="#leetcode" class="hover:text-blue-600 transition-colors sketch-font text-lg whitespace-nowrap">LeetCode</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="pt-32 pb-16 px-8 lg:px-16">
+            <div class="container mx-auto max-w-6xl">
+                <div class="sketch-border bg-white p-8 md:p-12 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row items-center gap-12">
+                        <div class="md:w-2/3">
+                            <h1 class="sketch-font text-5xl mb-6">Hello, I'm Bibhuti Bhusan Majhi</h1>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                A passionate MCA student with a creative approach to problem-solving. I love turning complex challenges into elegant solutions through code.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#contact" class="sketch-border relative bg-gray-900 text-white px-6 py-3 rounded hover-tilt inline-flex items-center gap-2">
+                                    <i class="bi bi-envelope"></i> Say Hello
+                                </a>
+                                <a href="https://github.com/tech9ic" target="_blank" class="sketch-border relative bg-white px-6 py-3 rounded hover-tilt inline-flex items-center gap-2">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="md:w-1/3">
+                            <div class="sketch-border p-2 bg-white rounded-full w-48 h-48 mx-auto">
+                                <img src="https://images.unsplash.com/photo-1635107510862-53886e926b74?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZ3JhbW1lcnx8fHx8fDE3MDY4NjY2MDY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=300" 
+                                     alt="Profile" 
+                                     class="rounded-full w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Education Section -->
+        <section id="education" class="py-16 px-8 lg:px-16">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="sketch-font text-4xl mb-8 text-center">Education Journey</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                        <h3 class="sketch-font text-2xl mb-2">Master of Computer Applications</h3>
+                        <p class="text-gray-600">Silicon Institute of Technology</p>
+                        <p class="text-gray-500">2022 - Present</p>
+                    </div>
+                    <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                        <h3 class="sketch-font text-2xl mb-2">Bachelor of Science (CS)</h3>
+                        <p class="text-gray-600">Ravenshaw University</p>
+                        <p class="text-gray-500">2019 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-8 lg:px-16">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="sketch-font text-4xl mb-8 text-center">Featured Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Cards -->
+                    <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                        <div class="h-40 bg-gray-100 rounded mb-4 flex items-center justify-center">
+                            <i class="bi bi-laptop text-4xl text-gray-400"></i>
+                        </div>
+                        <h3 class="sketch-font text-2xl mb-2">ClassBase</h3>
+                        <p class="text-gray-600 mb-4">School management system with modern interface</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">JavaScript</span>
+                        </div>
+                    </div>
+    
+                    <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                        <div class="h-40 bg-gray-100 rounded mb-4 flex items-center justify-center">
+                            <i class="bi bi-question-circle text-4xl text-gray-400"></i>
+                        </div>
+                        <h3 class="sketch-font text-2xl mb-2">Quiz App</h3>
+                        <p class="text-gray-600 mb-4">Interactive quiz platform with admin panel</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Java</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Swing</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Oracle</span>
+                        </div>
+                    </div>
+    
+                    <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                        <div class="h-40 bg-gray-100 rounded mb-4 flex items-center justify-center">
+                            <i class="bi bi-globe text-4xl text-gray-400"></i>
+                        </div>
+                        <h3 class="sketch-font text-2xl mb-2">Kiitizens</h3>
+                        <p class="text-gray-600 mb-4">Forum website for KIIT students</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="py-16 px-8 lg:px-16 bg-white">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="sketch-font text-4xl mb-8 text-center">Certifications</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="certificate-card sketch-border bg-white p-6 rounded-lg shadow-sm">
+                        <div class="mb-4">
+                            <i class="bi bi-award text-4xl text-blue-500"></i>
+                        </div>
+                        <h3 class="sketch-font text-xl mb-2">AWS Cloud Practitioner</h3>
+                        <p class="text-gray-600 text-sm mb-2">Amazon Web Services</p>
+                        <p class="text-gray-500 text-sm">Issued: Dec 2023</p>
+                    </div>
+                    <div class="certificate-card sketch-border bg-white p-6 rounded-lg shadow-sm">
+                        <div class="mb-4">
+                            <i class="bi bi-award text-4xl text-green-500"></i>
+                        </div>
+                        <h3 class="sketch-font text-xl mb-2">Python Programming</h3>
+                        <p class="text-gray-600 text-sm mb-2">Coursera</p>
+                        <p class="text-gray-500 text-sm">Issued: Nov 2023</p>
+                    </div>
+                    <div class="certificate-card sketch-border bg-white p-6 rounded-lg shadow-sm">
+                        <div class="mb-4">
+                            <i class="bi bi-award text-4xl text-purple-500"></i>
+                        </div>
+                        <h3 class="sketch-font text-xl mb-2">Web Development</h3>
+                        <p class="text-gray-600 text-sm mb-2">freeCodeCamp</p>
+                        <p class="text-gray-500 text-sm">Issued: Oct 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+   
+
+    <!-- Upcoming Projects Section -->
+    <section id="upcoming" class="py-16 px-8 lg:px-16 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="sketch-font text-4xl mb-8 text-center">Upcoming Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-rocket-takeoff text-3xl text-orange-500"></i>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">In Progress</span>
+                    </div>
+                    <h3 class="sketch-font text-2xl mb-2">AI Chat Platform</h3>
+                    <p class="text-gray-600 mb-4">Real-time chat application with AI-powered responses</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">OpenAI</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Firebase</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-orange-500 h-2 rounded-full" style="width: 60%"></div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">60% Complete</p>
+                    </div>
+                </div>
+
+                <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-graph-up text-3xl text-purple-500"></i>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Planning</span>
+                    </div>
+                    <h3 class="sketch-font text-2xl mb-2">Stock Analysis Dashboard</h3>
+                    <p class="text-gray-600 mb-4">Real-time stock market analysis with AI predictions</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">TensorFlow</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Vue.js</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-purple-500 h-2 rounded-full" style="width: 20%"></div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">20% Complete</p>
+                    </div>
+                </div>
+
+                <div class="sketch-border bg-white p-6 rounded-lg hover-tilt">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="bi bi-controller text-3xl text-green-500"></i>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
+                    </div>
+                    <h3 class="sketch-font text-2xl mb-2">2D Platform Game</h3>
+                    <p class="text-gray-600 mb-4">Retro-style platformer with modern mechanics</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Unity</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">C#</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Pixel Art</span>
+                    </div>
+                    <div class="mt-4">
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 10%"></div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">10% Complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LeetCode Stats -->
+    <section id="leetcode" class="py-16 px-8 lg:px-16 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="sketch-font text-4xl mb-8 text-center">LeetCode Journey</h2>
+            <div class="sketch-border bg-white p-8 rounded-lg">
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="p-6 bg-gray-50 rounded-lg">
+                        <h3 class="sketch-font text-3xl mb-2">200+</h3>
+                        <p class="text-gray-600">Problems Solved</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg">
+                        <h3 class="sketch-font text-3xl mb-2">150+</h3>
+                        <p class="text-gray-600">Contest Rating</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg">
+                        <h3 class="sketch-font text-3xl mb-2">Top 10%</h3>
+                        <p class="text-gray-600">Global Ranking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="bg-white py-16 px-8 lg:px-16 border-t border-gray-200">
+        <div class="container mx-auto max-w-6xl text-center">
+            <h2 class="sketch-font text-4xl mb-8">Let's Connect</h2>
+            <div class="flex flex-wrap justify-center gap-8 mb-8">
+                <a href="mailto:mailtobbm@gmail.com" class="flex items-center gap-2 hover:text-blue-600 transition-colors">
+                    <i class="bi bi-envelope text-2xl"></i>
+                    <span>mailtobbm@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/bbmajhi/" target="_blank" class="flex items-center gap-2 hover:text-blue-600 transition-colors">
+                    <i class="bi bi-linkedin text-2xl"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="tel:+919861370250" class="flex items-center gap-2 hover:text-blue-600 transition-colors">
+                    <i class="bi bi-phone text-2xl"></i>
+                    <span>+91-9861370250</span>
+                </a>
+            </div>
+            <p class="text-gray-500 sketch-font text-lg">© 2024 bbm | Made with ♥ on Canvas</p>
+        </div>
+    </footer>
+
+    <script src="/script/scripts.js"></script>
+</body>
+</html>

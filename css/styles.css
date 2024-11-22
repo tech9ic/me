@@ -1,0 +1,259 @@
+
+/* Root variables */
+/* :root {
+    --sketch-color: #2B2B2B;
+} */
+
+/* General styles */
+/* * {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.sketch-font {
+    font-family: 'Caveat', cursive;
+}
+
+.paper-bg {
+    background-color: #fff;
+    background-image: linear-gradient(#f1f1f1 1px, transparent 1px),
+                    linear-gradient(90deg, #f1f1f1 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.sketch-border {
+    position: relative;
+}
+
+.sketch-border::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid var(--sketch-color);
+    border-radius: 4px;
+    transform: skew(-1deg, 1deg);
+}
+
+.hover-tilt {
+    transition: transform 0.2s;
+}
+
+.hover-tilt:hover {
+    transform: rotate(-1deg) scale(1.02);
+}
+
+.certificate-card {
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.progress-bar {
+    height: 2px;
+    background-color: var(--sketch-color);
+} */
+
+
+
+/************************************/
+/* Custom styles for your project */
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+} */
+
+/* Navbar */
+/* nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+} */
+
+/* Hover effect for buttons */
+/* .hover-tilt:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-in-out;
+} */
+
+/* Custom Sketch font */
+/* .sketch-font {
+    font-family: 'Caveat', cursive;
+} */
+
+/* Background Paper */
+/* .paper-bg {
+    background: url('https://images.unsplash.com/photo-1505339837082-0b8ad1b1101c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=1200') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+} */
+
+/* Border for sections */
+/* .sketch-border {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+} */
+
+/* Tailwind utility classes for responsive design */
+/* @media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+} */
+
+
+
+
+/* Root variables */
+:root {
+    --sketch-color: #2B2B2B;
+}
+
+/* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sketch-font {
+    font-family: 'Caveat', cursive;
+}
+
+/* Background Paper */
+.paper-bg {
+    background-color: #fff;
+    background-image: linear-gradient(#f1f1f1 1px, transparent 1px),
+                    linear-gradient(90deg, #f1f1f1 1px, transparent 1px);
+    background-size: 20px 20px;
+    min-height: 100vh; /* Ensure it covers the whole page */
+}
+
+.paper-bg-img {
+    background: url('https://images.unsplash.com/photo-1505339837082-0b8ad1b1101c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=1200') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh; /* Ensure it covers the whole page */
+}
+
+/* Sketch border */
+.sketch-border {
+    position: relative;
+}
+
+.sketch-border::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid var(--sketch-color);
+    border-radius: 4px;
+    transform: skew(-1deg, 1deg);
+}
+
+/* Hover effects */
+.hover-tilt {
+    transition: transform 0.3s ease;
+}
+
+.hover-tilt:hover {
+    transform: rotate(-1deg) scale(1.02);
+}
+
+.certificate-card {
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Progress bar */
+.progress-bar {
+    height: 2px;
+    background-color: var(--sketch-color);
+}
+
+/************************************/
+/* Custom styles for your project */
+
+body {
+    background-color: #f9fafb;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9); /* Optional for transparency */
+}
+
+/* Custom Sketch font */
+.sketch-font {
+    font-family: 'Caveat', cursive;
+}
+
+/* Border for sections */
+.sketch-border {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+/* Tailwind utility classes for responsive design */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+/* Mobile Menu Styles */
+.nav-links {
+    display: none; /* Hidden by default on mobile */
+}
+
+.menu-button {
+    display: block; /* Make hamburger button visible on mobile */
+}
+
+/* Show menu when active */
+.nav-links.active {
+    display: block;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px; /* Adjust based on your header's height */
+        right: 0;
+        background-color: #333; /* Or your desired background color */
+        width: 100%;
+        padding: 10px;
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-links a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
